@@ -105,6 +105,8 @@ p {
   margin-right: 10px;
 
   fill: var(--secondary-text-color);
+
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .link-phone {
@@ -115,6 +117,8 @@ p {
   margin-right: 10px;
 
   fill: var(--secondary-text-color);
+
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .link-address:hover .link-mail,
@@ -122,8 +126,6 @@ p {
 .link-address:hover .link-phone,
 .link-address:focus .link-phone {
   fill: var(--main-theme-color);
-
-  transition: fill var(--duration) var(--timing-function);
 }
 
 .item-about::before {
@@ -189,13 +191,13 @@ p {
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
+
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .media-footer-link:hover,
 .media-footer-link:focus {
   background-color: var(--main-theme-color);
-
-  transition: background-color var(--duration) var(--timing-function);
 }
 
 .media-footer-icon {
@@ -216,6 +218,8 @@ p {
 
   border: 1px solid var(--client-border);
   border-radius: 4px;
+
+  transition: border-color var(--duration) var(--timing-function);
 }
 
 .item-client-icon {
@@ -223,20 +227,18 @@ p {
   height: 60px;
 
   fill: var(--client-border);
+
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .link-client:hover,
 .link-client:focus {
   border-color: var(--main-theme-color);
-
-  transition: border-color var(--duration) var(--timing-function);
 }
 
 .link-client:hover .item-client-icon,
 .link-client:focus .item-client-icon {
   fill: var(--main-theme-color);
-
-  transition: fill var(--duration) var(--timing-function);
 }
 
 .header {
@@ -289,6 +291,8 @@ p {
 
 .link-nav {
   color: var(--main-text-color);
+
+  transition: color var(--duration) var(--timing-function);
 }
 
 .link-nav-selected {
@@ -313,6 +317,8 @@ p {
 
 .link-address {
   color: var(--secondary-text-color);
+
+  transition: color var(--duration) var(--timing-function);
 }
 
 .hero {
@@ -364,13 +370,13 @@ p {
   border-color: transparent;
   color: var(--third-text-color);
   background-color: var(--main-theme-color);
+
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--hero-button-color);
-
-  transition: background-color var(--duration) var(--timing-function);
 }
 
 .backdrop {
@@ -392,6 +398,7 @@ p {
 }
 
 .modal {
+  z-index: 1000;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -467,6 +474,10 @@ p {
 }
 
 .img-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -476,12 +487,7 @@ p {
 }
 
 .img-text {
-  display: flex;
   letter-spacing: 0.03em;
-  justify-content: center;
-
-  padding-top: 27px;
-  padding-bottom: 27px;
 
   color: var(--third-text-color);
 }
@@ -576,6 +582,8 @@ p {
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
+
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .decs-contact-icon {
@@ -584,20 +592,18 @@ p {
   cursor: pointer;
 
   fill: var(--client-border);
+
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .team-contact:hover,
 .team-contact:focus {
   background-color: var(--main-theme-color);
-
-  transition: background-color var(--duration) var(--timing-function);
 }
 
 .team-contact:hover .decs-contact-icon,
 .team-contact:focus .decs-contact-icon {
   fill: var(--third-text-color);
-
-  transition: fill var(--duration) var(--timing-function);
 }
 
 .item-team:not(:last-child) {
@@ -621,6 +627,8 @@ p {
 
 .footer-address {
   color: var(--third-text-color);
+
+  transition: color var(--duration) var(--timing-function);
 }
 
 .footer-contact {
@@ -644,6 +652,10 @@ p {
   padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
+
+  transition: color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
 .control-item:not(:last-child) {
@@ -658,10 +670,6 @@ p {
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition: color var(--duration) var(--timing-function),
-    background-color var(--duration) var(--timing-function),
-    box-shadow var(--duration) var(--timing-function);
 }
 
 .work-list {
@@ -681,12 +689,14 @@ p {
   cursor: pointer;
 }
 
+.work-link {
+  transition: box-shadow var(--duration) var(--timing-function);
+}
+
 .work-link:hover,
 .work-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  transition: box-shadow var(--duration) var(--timing-function);
 }
 
 .work-img {
@@ -772,6 +782,4 @@ p {
 .footer-address:hover,
 .footer-address:focus {
   color: var(--main-theme-color);
-
-  transition: color var(--duration) var(--timing-function);
 }

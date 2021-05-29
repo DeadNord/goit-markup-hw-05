@@ -733,8 +733,8 @@ p {
   color: var(--third-text-color);
 }
 
-.work-item:hover .work-overlay,
-.work-item:focus .work-overlay {
+.work-link:hover .work-overlay,
+.work-link:focus .work-overlay {
   transform: translateY(0);
 }
 
